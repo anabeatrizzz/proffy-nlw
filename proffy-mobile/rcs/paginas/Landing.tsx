@@ -21,6 +21,10 @@ function Landing(){
 		navigate('MinistrarAulas')
 	}
 
+	function handleVisitarEstudar(){
+		navigate('Estudar')
+	}
+
 	return (
 		<View style={estilos.container}>
 			<Image source={landingImg} style={estilos.banner} />
@@ -31,7 +35,7 @@ function Landing(){
 				</Text>
 			</Text>
 			<View style={estilos.containerBotoes}>
-				<RectButton style={[estilos.botao, estilos.botaoPrimary]}>
+				<RectButton onPress={handleVisitarEstudar} style={[estilos.botao, estilos.botaoPrimary]}>
 						<Image source={iconEstudar} />
 						<Text style={estilos.textoBotao}>Estudar</Text>
 				</RectButton>
