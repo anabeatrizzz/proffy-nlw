@@ -43,7 +43,7 @@ const estilos = StyleSheet.create({
 	textoBotaoOk: {
 		color: '#FFF',
 		fontSize: 16,
-		fontFamily 'Archivo_700Bold',
+		fontFamily: 'Archivo_700Bold'
 	}
 })
 

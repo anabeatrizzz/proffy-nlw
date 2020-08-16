@@ -1,6 +1,6 @@
-import { StyleSheets } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const estilos = StyleSheets.create({
+const estilos = StyleSheet.create({
 	container: {
 		padding: 40,
 		backgroundColor: '#8257e5'

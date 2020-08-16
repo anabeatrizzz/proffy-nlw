@@ -57,7 +57,7 @@ const estilos = StyleSheet.create({
 		fontFamily: 'Poppins_400Regular',
 		color: '#d4c2ff',
 		fontSize: 12,
-		lineHeight 20,
+		lineHeight: 20,
 		maxWidth: 140,
 		marginTop: 40
 	}

@@ -3,7 +3,7 @@ import { View, ImageBackground, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 // Imagens
-import fundoMinistrarAulas from '../assets/images/give-classes-bacground.png';
+import fundoMinistrarAulas from '../assets/images/give-classes-background.png';
 
 // Componente que adapta o efeito do clique em botões dependendo do SO do celular
 import { RectButton } from 'react-native-gesture-handler';
@@ -12,14 +12,15 @@ import { RectButton } from 'react-native-gesture-handler';
 import estilos from './MinistrarAulas.ts';
 
 function MinistrarAulas(){
-	return (
-		const { goBack } = useNavigation()
+	const { goBack } = useNavigation()
 
-		function handleVoltar(){
-			goBack();
-		}
+	function handleVoltar(){
+		goBack();
+	}
+
+	return (
 		<View style={estilos.container}>
-			<ImageBackground resizeMode: 'contain' style={estilos.conteudo} source={fundoMinistrarAulas}>
+			<ImageBackground resizeMode='contain' style={estilos.conteudo} source={fundoMinistrarAulas}>
 				<Text style={estilos.titulo}>Deseja ser um Proffy?</Text>
 				<Text style={estilos.descricao}>Para começar, você precisa se cadastrar em nossa plataforma web.</Text>
 			</ImageBackground>
