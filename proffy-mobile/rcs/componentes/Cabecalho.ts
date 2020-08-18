@@ -17,8 +17,14 @@ const estilos = StyleSheet.create({
 		color: '#FFF',
 		fontSize: 24,
 		lineHeight: 32,
-		maxWidth: 160,
+		maxWidth: 200,
 		marginVertical: 40
+	},
+
+	cabecalho: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'space-between'
 	}
 })
 

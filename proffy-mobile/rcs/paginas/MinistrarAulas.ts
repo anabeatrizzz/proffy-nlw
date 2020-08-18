@@ -19,7 +19,7 @@ const estilos = StyleSheet.create({
 		color: '#FFF',
 		fontSize: 32,
 		lineHeight: 37,
-		maxWidth: 180
+		maxWidth: 200
 	},
 
 	descricao: {

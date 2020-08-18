@@ -3,8 +3,6 @@ import wppIcon from '../assets/images/icons/whatsapp.svg';
 import api from '../servicos/api';
 import './ItemProf.css';
 
-/* 01:55:19 */
-
 export interface Prof {
 	bio_usuario: string
 	cd_usuario: number

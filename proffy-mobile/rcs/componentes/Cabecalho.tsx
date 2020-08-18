@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { View, Image, Text } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
@@ -12,9 +12,11 @@ import estilos from './Cabecalho';
 
 interface propsCabecalho {
 	titulo: string;
+	// Essa propriedade opcional pode receber um componente do React
+	direitaCabecalho?: ReactNode
 }
 
-const Cabecalho: React.FC<propsCabecalho> = ({ titulo }) => {
+const Cabecalho: React.FC<propsCabecalho> = ({ titulo, children, direitaCabecalho }) => {
 	const { navigate } =	useNavigation();
 
 	function handleVoltar(){
@@ -29,7 +31,11 @@ const Cabecalho: React.FC<propsCabecalho> = ({ titulo }) => {
 				</BorderlessButton>
 				<Image source={logoImg} resizeMode="contain" />
 			</View>
-			<Text style={estilos.titulo}>{titulo}</Text>
+			<View style={estilos.cabecalho}>
+				<Text style={estilos.titulo}>{titulo}</Text>
+				{direitaCabecalho}
+			</View>
+			{children}
 		</View>
 	)
 }

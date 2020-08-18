@@ -15,6 +15,13 @@ import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/popp
   - Se a tela do dispositivo movel necessitar de uma imagem maior, o React Native lidará com isso procurando a imagem ideal na pasta images.
   - StatusBar é a barra localizada no topo do dispositivo movel.
   - Se escreve <Componente /> quando o Componente não tem conteudo, do contrario escreve-se <Componente></Componente>.
+  - Conceito de estado: Se o usuario tiver a possibilidade de mudar algo, esse algo precisa estar em um estado.
+*/
+
+/*
+  DESAFIOS:
+  - Usar a biblioteca react-native-picker para o select no componente ListaProfs.
+  
 */
 
 export default function App() {
