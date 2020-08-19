@@ -1,4 +1,3 @@
-/* 02:03:19 */
 /* Biblioteca para podermos escrever SQL na sintaxe JS */
 import knex from 'knex';
 
