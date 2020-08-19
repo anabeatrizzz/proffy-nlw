@@ -11,7 +11,6 @@ import Rotas from './rotas';
   - node_modules: Os códigos das dependencias instaladas.
   - {props.children} retorna o conteudo escrito dentro do componente.
   - Depois que criadas, as variaveis não são modificaveis
-  - Conceito de estado: 
 */
 
 function App() {
