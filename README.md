@@ -1,3 +1,66 @@
+<p align="center">
+  <img width="50%" src="https://github.com/PedroBoni/Proffy/raw/master/logoGit.svg" alt="Icon-Imersao-Alura"/>
+</p>
+
+# Índice
+* [O que aprendi? :thinking:](#o-que-aprendi-thinking)
+* [Configurações padrões :wrench:](#configurações-padrões-wrench)
+
+Este é meu segundo projeto com React e React Native, o primeiro com TypeScript e...
+# [O que aprendi? :thinking:](#índice)
+- **proffy-mobile**
+	- No React Native não usamos tags `HTML` como no ReactJS. Como alternativa, usamos componentes já criados do pacote `react-native`.
+	- O componente `View` pode ser comparado com a tag `div` do `HTML`.
+	- Usamos `StyleSheet` do pacote `react-native` para a estilização. A grande maioria dos comandos `css` estão disponíveis.
+	- Se a tela do dispositivo móvel necessitar de uma imagem maior, o React Native lidará com isso procurando a imagem ideal na pasta `images`.
+	- `StatusBar` é a barra localizada no topo do dispositivo móvel.
+	- Se escreve `<Componente />` quando o Componente não tem conteúdo, do contrário escreve-se `<Componente></Componente>`.
+	- Conceito de estado: Se o usuário tiver a possibilidade de mudar algo, esse algo precisa estar em um estado.
+
+- **proffy-web**
+	- Cada página da aplicação é uma rota, ou seja, um `Route`.
+	- Propriedades seriam como um `type="submit"` em uma tag `button`, só que passamos elas em componentes.
+	- Os dois `&` são usados quando uma condição ternaria não precisa da parte do `else`.
+	- `...rest` representa o resto dos atributos do `input`.
+	- Deve-se indicar o `./` para que não se confunda com um pacote instalado com `npm`.
+
+- **servidor**
+	- Rota: `http://localhost:3333/usuarios`
+	- Recurso: `usuarios`
+	- `app.get('/recurso', função executada quando a rota é acessada) `
+	- Alguns métodos `HTTP`
+		- `GET`: Para buscar e listar informações.
+		- `POST`: Para criar informações novas.
+		- `PUT`: Para atualizar informações existentes.
+		- `DELETE`: Para apagar informações.
+	- Parâmetros da requisição:
+		- `body`: Onde estão os dados para a criação ou atualização de um registro
+			- Exemplo:
+      ```javascript
+        app.post('/recurso', (request, response) => {
+          console.log(request.body)
+        });
+      ```
+		- `route`: Indica qual recurso atualizar ou deletar
+			- Exemplo: Dois pontos depois de `/` para indicar parâmetro
+      ```javascript
+        app.delete('/recurso/:id', (request, response) => {
+          console.log(request.params)
+        });
+      ```
+		- `query`: Para paginação, filtros, ordenação
+			- Exemplo:
+      ```javascript
+        app.get('/recurso', (request, response) => {
+          console.log(request.query)
+        });
+      ```
+	- `Migrations` controlam a versão do banco de dados. Dentro delas descrevemos o que queremos fazer no banco (criar tabelas e colunas novas, deletar campo, alterar o tipo da coluna, etc).
+	- Parâmetros da função `post()`
+		- `request`: Usado para obter informações sobre a requisição (dados que vem do front-end).
+		- `response`: Resposta que o back-end retorna para o front-end.
+
+# [Configurações padrões :wrench:](#índice)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
