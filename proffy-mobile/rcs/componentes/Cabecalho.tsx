@@ -11,33 +11,33 @@ import logoImg from '../assets/images/logo.png';
 import estilos from './Cabecalho';
 
 interface propsCabecalho {
-	titulo: string;
-	// Essa propriedade opcional pode receber um componente do React
-	direitaCabecalho?: ReactNode
+  titulo: string;
+  // Essa propriedade opcional pode receber um componente do React
+  direitaCabecalho?: ReactNode
 }
 
 const Cabecalho: React.FC<propsCabecalho> = ({ titulo, children, direitaCabecalho }) => {
-	const { navigate } =	useNavigation();
+  const { navigate } =  useNavigation();
 
-	function handleVoltar(){
-		navigate('Landing')
-	}
+  function handleVoltar(){
+    navigate('Landing')
+  }
 
-	return (
-		<View style={estilos.container}>
-			<View style={estilos.barraTopo}>
-				<BorderlessButton onPress={handleVoltar}>
-					<Image source={iconVoltar} resizeMode="contain" />
-				</BorderlessButton>
-				<Image source={logoImg} resizeMode="contain" />
-			</View>
-			<View style={estilos.cabecalho}>
-				<Text style={estilos.titulo}>{titulo}</Text>
-				{direitaCabecalho}
-			</View>
-			{children}
-		</View>
-	)
+  return (
+    <View style={estilos.container}>
+      <View style={estilos.barraTopo}>
+        <BorderlessButton onPress={handleVoltar}>
+          <Image source={iconVoltar} resizeMode="contain" />
+        </BorderlessButton>
+        <Image source={logoImg} resizeMode="contain" />
+      </View>
+      <View style={estilos.cabecalho}>
+        <Text style={estilos.titulo}>{titulo}</Text>
+        {direitaCabecalho}
+      </View>
+      {children}
+    </View>
+  )
 }
 
 export default Cabecalho;

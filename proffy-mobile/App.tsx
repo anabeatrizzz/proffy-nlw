@@ -21,7 +21,7 @@ import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/popp
 /*
   DESAFIOS:
   - Usar a biblioteca react-native-picker para o select no componente ListaProfs.
-  
+  - 01:26:31
 */
 
 export default function App() {

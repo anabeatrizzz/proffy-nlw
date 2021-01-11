@@ -1,63 +1,63 @@
 #pagina-lista-professores {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 #pagina-lista-professores main {
-	margin: 3.2rem auto;
-	width: 90%;
+  margin: 3.2rem auto;
+  width: 90%;
 }
 
 #pesquisar-professor {
-	margin-top: 3.2rem;
+  margin-top: 3.2rem;
 }
 
 #pesquisar-professor label {
-	color: var(--color-text-in-primary);
+  color: var(--color-text-in-primary);
 }
 
 #pesquisar-professor button {
-	width: 35%;
-	height: 5.6rem;
-	background: var(--color-secondary);
-	color: var(--color-button-text);
-	border: 0;
-	border-radius: 0.8rem;
-	cursor: pointer;
-	font: 700 1.6rem Archivo;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	transition: background-color 0.2s;
-	margin-top: 3.2rem;
+  width: 35%;
+  height: 5.6rem;
+  background: var(--color-secondary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
 }
 
 #pesquisar-professor button:hover {
-	background: var(--color-secondary-dark);
+  background: var(--color-secondary-dark);
 }
 
 @media (min-width: 700px) {
-	#pagina-lista-professores {
-		max-width: 100%;
-	}
+  #pagina-lista-professores {
+    max-width: 100%;
+  }
 
-	#pesquisar-professor {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 16px;
-		position: absolute;
-		bottom: -28px;
-	}
+  #pesquisar-professor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    position: absolute;
+    bottom: -28px;
+  }
 
-	#pesquisar-professor .bloco-para-input + .bloco-para-input,
-	#pesquisar-professor .bloco-para-select + .bloco-para-select {
-		margin-top: 0;
-	}
+  #pesquisar-professor .bloco-para-input + .bloco-para-input,
+  #pesquisar-professor .bloco-para-select + .bloco-para-select {
+    margin-top: 0;
+  }
 
-	#pagina-lista-professores main {
-		padding: 3.2rem 0;
-		max-width: 740px;
-		margin: 0 auto;
-	}
+  #pagina-lista-professores main {
+    padding: 3.2rem 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
 }
