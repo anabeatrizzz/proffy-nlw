@@ -4,7 +4,12 @@ import knex from 'knex';
 /* Caminhando por pastas de outra forma */
 import path from 'path';
 
-// Migrations controlam a versão do banco de dados. Dentro delas descrevemos o que queremos fazer no banco (criar tabelas e colunas novas, deletar campo, alterar o tipo da coluna, etc)
+/*
+  Migrations controlam a versão do banco de dados.
+  Dentro delas descrevemos o que queremos fazer no banco
+  (criar tabelas e colunas novas, deletar campo,
+  alterar o tipo da coluna, etc)
+*/
 
 const db = knex({
   /* Tipo do banco de dados */
